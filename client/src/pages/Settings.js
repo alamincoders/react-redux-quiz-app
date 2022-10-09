@@ -41,17 +41,22 @@ const Settings = () => {
     navigate("/questions");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <SelectField options={response.trivia_categories} label="Category" />
-      <SelectField options={difficultyOptions} label="Difficulty" />
-      <SelectField options={typeOptions} label="Type" />
-      <TextFieldComp />
-      <Box mt={3} width="100%">
-        <Button fullWidth variant="contained" type="submit">
-          Get Started
-        </Button>
-      </Box>
-    </form>
+    <>
+      <Typography variant="h2" fontWeight="bold" my={3}>
+        Quiz App
+      </Typography>
+      <form onSubmit={handleSubmit}>
+        <SelectField options={response.trivia_categories} label="Category" />
+        <SelectField options={difficultyOptions} label="Difficulty" />
+        <SelectField options={typeOptions} label="Type" />
+        <TextFieldComp />
+        <Box mt={3} width="100%">
+          <Button fullWidth variant="contained" type="submit">
+            Get Started
+          </Button>
+        </Box>
+      </form>
+    </>
   );
 };
 

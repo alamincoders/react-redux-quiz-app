@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import Container from "@mui/material/Container";
 import { Route, Routes } from "react-router-dom";
 import FinalScreen from "./pages/FinalScreen";
@@ -13,9 +13,6 @@ function App() {
             path="/"
             element={
               <>
-                <Typography variant="h2" fontWeight="bold">
-                  Quiz App
-                </Typography>
                 <Settings />
               </>
             }
