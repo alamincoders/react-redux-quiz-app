@@ -22,7 +22,7 @@ function App() {
           />
           <Route path="/settings" element={<Settings />} />
           <Route path="/questions" element={<Questions />} />
-          <Route path="/final" element={<FinalScreen />} />
+          <Route path="/scorecard" element={<FinalScreen />} />
         </Routes>
       </Box>
     </Container>

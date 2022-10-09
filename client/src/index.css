@@ -8,3 +8,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+.button {
+  width: 100%;
+  padding: 15px 18px;
+  border: none;
+}
